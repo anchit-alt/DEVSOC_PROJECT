@@ -1,12 +1,16 @@
+hmtl {
+  scroll-behavior: smooth;
+}
 * {
   box-sizing: border-box;
 }
-h1 {
+.main-heading {
   border:solid 2px black;
   display: inline-block;
   color:black ;
   margin-top: 8%;
 }
+
 .container-1 {
   /* border: 2px solid blue; */
   text-align: center;
@@ -62,7 +66,6 @@ h1 {
 .variety-content {
   font-size: 4.2rem;
   font-weight: 900;
-  font-stretch:extra-expanded;
   letter-spacing: 0.3em;
   color:white;
 }
@@ -92,37 +95,104 @@ h1 {
 }
 
 
+/* DINNER STYLE */
+.dn-heading-main{
+  font-weight: 900;
+  letter-spacing: 1.5em;
+  margin-top: 2%;
 
-
-
-
-
-/* #testimonials {
-  padding: 7% 15%;
+}
+.dn-whole-page {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom right , rgba(10, 21, 55, 0.89),rgba(130, 144, 236, 0.89));
+}
+.title{
+  padding-top:2.5%;
   text-align: center;
-  background-color: #ef8172;
-  color: #fff;
+  height: 20vh;
+  color: white;
+  letter-spacing: 1.4em;
+  font-size: 1.8em;
+  font-weight: 900;
 }
-.carousel-item {
-  padding: 7% 15%;
+.dn-menu{
+  display: flex;
+  margin: 4%;
+}
+.dn-col {
+  display: flex;
+  flex-direction:column;
+  /* border: solid 2px black; */
+  width: 50%;
+  text-align: center;
+}
+.dn-col1 {
+  /* border: solid 2px red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10%;
+}
+.dish1-img {
+  width: 100%;
+  border: solid white 0.7em;
+  border-radius: 10%;
 
 }
-.testimonial-image {
-  width: 10%;
-  border-radius: 100%;
-  margin: 20px;
+.a:hover {
+  transition: 0.8s;
+  transition-timing-function: ease-out;
+  transform: translate3d(15px,4px,100px);
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
+
 }
+.child {
+  width:50%;
+  display: flex;
+  justify-content: center;
+}
+.grand-child{
+  align-items:center;
+  margin: auto;
+  width: 100%;
+}
+/* DINNER STYLE CLOSE */
+
+
+/* CART STYLE OPEN */
+.cart-main{
+  display: flex;
+  flex-direction:column;
+  padding: 5%;
+  border: solid black 2px;
+  text-align: center;
+  background-color: grey;
+}
+.cart-sub{
+  display: flex;
+  border: solid red 2px;
+
+}
+.cart-col {
+  width: 100%;
+  height: 40vh;
+  border: white 1px solid;
+}
+.total {
+  width: 100%;
+}
+
+.checkout {
+  text-align: center;
+  margin-top: 5%;
+}
+/* CART STYLE CLOSE
+
+
+
  */
-
-
-
-
-
-
-
-
-
-
 
 
 
