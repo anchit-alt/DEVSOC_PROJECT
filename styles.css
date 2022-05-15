@@ -1,18 +1,17 @@
 * {
   box-sizing: border-box;
-  margin:0;
 }
 h1 {
   border:solid 2px black;
   display: inline-block;
-  color:white;
+  color:black ;
+  margin-top: 8%;
 }
 .container-1 {
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   text-align: center;
   font-size: 3rem;
   height:100vh;
-
   background-image: url('images/res-image.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,14 +22,29 @@ h1 {
   justify-content: center;
   align-items: center;
 }
-
+.time-img{
+  text-align: center;
+  /* border: 5px solid green; */
+}
+.chef {
+  width: 80%;
+  border-radius: 5%;
+}
+.time-content {
+  font-size: 1.5em;
+  font-weight: 700;
+  color: white;
+  margin-left: 5%;
+}
 .menu {
   display: flex;
   border: 2px solid black;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 90vh;
   padding: 1%;
+  /* background-color: rgba(255, 0, 0, 0.5); */
+  background-color: #EEEEEE;
 
 }
 .variety {
@@ -39,15 +53,42 @@ h1 {
   height: 80%;
   text-align: center;
   margin: 1%;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 
 }
 .variety-content {
-  padding-top: 10%;
-  height: 50%;
+  font-size: 4.2rem;
+  font-weight: 900;
+  font-stretch:extra-expanded;
+  letter-spacing: 0.3em;
+  color:white;
 }
 .variety-btn {
+  margin-top: 19%;
+}
+.bf {
+  background-image:url("images/bf2.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.drinks {
+  background-image:url("images/drinks.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ln {
+  background-image:url("images/ln.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
-
+.dn {
+  background-image:url("images/dn.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 
@@ -56,8 +97,22 @@ h1 {
 
 
 
+/* #testimonials {
+  padding: 7% 15%;
+  text-align: center;
+  background-color: #ef8172;
+  color: #fff;
+}
+.carousel-item {
+  padding: 7% 15%;
 
-
+}
+.testimonial-image {
+  width: 10%;
+  border-radius: 100%;
+  margin: 20px;
+}
+ */
 
 
 
