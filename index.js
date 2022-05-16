@@ -27,3 +27,59 @@ else {
 //footer
 document.querySelector("footer").textContent = "Copyright @ "+currentYear;
 //footer closed
+
+
+
+//<-------------------------------------------------------------------------------------------------------------------------------->
+
+
+// DOM_RUCHIK
+alert("this works");
+var noOfItems = 8;
+var itemName = ["mi1","mi2","mi3","mi4","mi5","mi6","mi7","mi8"];
+var itemPrice = [100,200,300,400,500,600,700,800];
+var itemQnt = [0,0,0,0,0,0,0,0];
+
+for(var i=0;i<noOfItems;i++){
+  document.querySelector("#mi"+(i+1)).addEventListener("click",function(){
+    itemQnt[this.id[2]-1]++;
+    document.querySelector("."+this.id+"q").innerHTML = itemQnt[this.id[2]-1];
+    document.querySelector(".itemsname").innerHTML = "";
+    document.querySelector(".itemsqnt").innerHTML = "";
+    document.querySelector(".itemsprice").innerHTML = "";
+    display();
+  });
+}
+
+for(var i=0;i<noOfItems;i++){
+  document.querySelector("#mim"+(i+1)).addEventListener("click",function(){
+    if(itemQnt[this.id[3]-1]!=0){
+      itemQnt[this.id[3]-1]--;
+      document.querySelector(".mi"+this.id[3]+"q").innerHTML = itemQnt[this.id[3]-1];
+      document.querySelector(".itemsname").innerHTML = "";
+      document.querySelector(".itemsqnt").innerHTML = "";
+      document.querySelector(".itemsprice").innerHTML = "";
+      display();
+    }
+  });
+}
+
+function display(){
+  for(var i=0;i<noOfItems;i++){
+    if(itemQnt[i]!=0){
+      document.querySelector(".itemsname").innerHTML += "<li> "+itemName[i];
+      document.querySelector(".itemsqnt").innerHTML += "<li>"+itemQnt[i];
+      document.querySelector(".itemsprice").innerHTML += "<li>"+itemPrice[i]+" X "+itemQnt[i];
+    }
+  }
+  var price = 0;
+  var dishes = 0;
+  for(var i=0;i<noOfItems;i++){
+    dishes+=itemQnt[i];
+  }
+  document.querySelector(".total-of-dishes").innerHTML = dishes+" dishes";
+  for(var i=0;i<noOfItems;i++){
+    price += itemPrice[i]*itemQnt[i];
+  }
+  document.querySelector(".amount-in-ruppees").innerHTML = "₹"+price+" only";
+}
