@@ -5,10 +5,16 @@ hmtl {
   box-sizing: border-box;
 }
 .main-heading {
-  border:solid 2px black;
+  /* border:solid 2px white; */
   display: inline-block;
-  color:black ;
+  font-size:2em;
+  font-family: 'Satisfy', cursive;
+  /* color:white ; */
   margin-top: 8%;
+
+  background: -webkit-linear-gradient(135deg, white, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .container-1 {
@@ -52,7 +58,7 @@ hmtl {
 
 }
 .variety {
-  border: red 5px solid;
+  /* border: red 5px solid; */
   width: 90%;
   height: 80%;
   text-align: center;
@@ -68,6 +74,7 @@ hmtl {
   font-weight: 900;
   letter-spacing: 0.3em;
   color:white;
+  font-family: 'Chewy', cursive;
 }
 .variety-btn {
   margin-top: 19%;
@@ -105,7 +112,8 @@ hmtl {
 .dn-whole-page {
   display: flex;
   flex-direction: column;
-  background-image: linear-gradient(to bottom right , rgba(10, 21, 55, 0.89),rgba(130, 144, 236, 0.89));
+  /* background-image: linear-gradient(to bottom right , rgba(10, 21, 55, 0.89),rgba(130, 144, 236, 0.89)); */
+  background-image: linear-gradient(to bottom right, #082567,#E0FFFF);
 }
 .title{
   padding-top:2.5%;
@@ -142,7 +150,7 @@ hmtl {
 
 }
 .a:hover {
-  transition: 0.8s;
+  transition: 0.7s;
   transition-timing-function: ease-out;
   transform: translate3d(15px,4px,100px);
   box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
@@ -179,6 +187,16 @@ hmtl {
   width: 100%;
   height: 40vh;
   border: white 1px solid;
+}
+.cart-col-1 {
+  padding: 2%;
+}
+.cart-col-2 {
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 .total {
   width: 100%;
