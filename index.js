@@ -28,9 +28,9 @@ else {
   document.querySelector(".currenttime").style.fontSize = "3.4em";
   document.querySelector(".time-content").textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,";
   document.querySelector(".time-meal").style.backgroundColor = "#051367";
-  document.querySelector(".time-meal").style.backgroundImage = "linear-gradient(to bottom right, rgba(13, 13, 242, 1), rgba(5, 5, 62, 1))";
+  document.querySelector(".time-meal").style.backgroundImage = "linear-gradient(to bottom right, #686884,#121216 )";
 }
-
+// rgba(13, 13, 242, 1)rgba(5, 5, 62, 1)
 // Dynamic time code closed
 
 //footer
