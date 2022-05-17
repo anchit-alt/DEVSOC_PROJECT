@@ -43,6 +43,7 @@ document.querySelector("footer").textContent = "Copyright @ "+currentYear;
 
 
 // DOM_RUCHIK
+alert("this works");
 var noOfItems = 24;
 var itemName = ["mi1","mi2","mi3","mi4","mi5","mi6","mi7","mi8","mi9","mi10","mi11","mi12","mi13","mi14","mi15","mi16","mi17","mi18","mi19","mi20","mi21","mi22","mi23","mi24"];
 var itemPrice = [100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400];
@@ -50,8 +51,8 @@ var itemQnt = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 for(var i=0;i<noOfItems;i++){
   document.querySelector("#mi"+(i+1)).addEventListener("click",function(){
-    itemQnt[this.id[2]-1]++;
-    document.querySelector("."+this.id+"q").innerHTML = itemQnt[this.id[2]-1];
+    itemQnt[this.id.match(/(\d+)/)[0]-1]++;
+    document.querySelector(".mi"+this.id.match(/(\d+)/)[0]+"q").innerHTML = itemQnt[this.id.match(/(\d+)/)[0]-1];
     document.querySelector(".itemsname").innerHTML = "";
     document.querySelector(".itemsqnt").innerHTML = "";
     document.querySelector(".itemsprice").innerHTML = "";
@@ -61,9 +62,9 @@ for(var i=0;i<noOfItems;i++){
 
 for(var i=0;i<noOfItems;i++){
   document.querySelector("#mim"+(i+1)).addEventListener("click",function(){
-    if(itemQnt[this.id[3]-1]!=0){
-      itemQnt[this.id[3]-1]--;
-      document.querySelector(".mi"+this.id[3]+"q").innerHTML = itemQnt[this.id[3]-1];
+    if(itemQnt[this.id.match(/(\d+)/)[0]-1]!=0){
+      itemQnt[this.id.match(/(\d+)/)[0]-1]--;
+      document.querySelector(".mi"+this.id.match(/(\d+)/)[0]+"q").innerHTML = itemQnt[this.id.match(/(\d+)/)[0]-1];
       document.querySelector(".itemsname").innerHTML = "";
       document.querySelector(".itemsqnt").innerHTML = "";
       document.querySelector(".itemsprice").innerHTML = "";
