@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Zen+Loop&display=swap');
+
+
 hmtl {
   scroll-behavior: smooth;
 }
@@ -10,8 +13,8 @@ hmtl {
   font-size:2em;
   font-family: 'Satisfy', cursive;
   /* color:white ; */
-  margin-top: 8%;
-  background: -webkit-linear-gradient(135deg, white, black);
+  margin-top: 20%;
+  background: -webkit-linear-gradient(135deg, rgba(0, 0, 0,1), rgba(255, 255, 255, 1));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation-name: moveInLeft;
@@ -75,7 +78,6 @@ hmtl {
 }
 .menu {
   display: flex;
-  border: 2px solid black;
   align-items: center;
   justify-content: center;
   height: 90vh;
@@ -86,7 +88,7 @@ hmtl {
 }
 .variety {
   /* border: red 5px solid; */
-  width: 90%;
+  width: 80%;
   height: 80%;
   text-align: center;
   margin: 1%;
@@ -127,13 +129,6 @@ hmtl {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.video-container{
-  opacity: 0.5;
-  width: 100%
-}
-
-
 /* DINNER STYLE */
 .dn-heading-main{
   font-weight: 900;
@@ -206,26 +201,59 @@ hmtl {
 
 
 /* CART STYLE OPEN */
+.cart-title-head {
+  color: black;
+
+}
 .cart-main{
   display: flex;
   flex-direction:column;
   padding: 5%;
   border: solid black 2px;
   text-align: center;
-  background-color: grey;
+  color: black;
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  font-size: 1em;
+  font-weight: 900;
+  font-family: 'Rubik', sans-serif;
+
+}
+.overlay{
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ /* background: #03a9f4; */
+ mix-blend-mode: overlay;
+}
+.cart-main video {
+  position: absolute;
+  top:0;
+  left:0;
+  object-fit:cover;
+  width: 100%;
+ height: 100%;
+ opacity: 0.4;
 }
 .cart-sub{
   display: flex;
-  border: solid red 2px;
-
+  overflow: auto;
+  z-index: 10;
+  position: relative;
+  top:0;
+  left: 0;
+  letter-spacing: 20%;
 }
 .cart-col {
   width: 100%;
   height: 40vh;
-  border: white 1px solid;
 }
 .cart-col-1 {
   padding: 2%;
+  margin: 2%;
 }
 .cart-col-2 {
   padding: 2%;
@@ -266,4 +294,6 @@ hmtl {
 footer {
   text-align: center;
   padding: 3%;
+  margin-bottom: 0px;
+  z-index: 1000;
 }

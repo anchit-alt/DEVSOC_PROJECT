@@ -19,7 +19,7 @@ if (time>=5&&time<12){
   document.querySelector(".currenttime").textContent = "It's " + time
   document.querySelector(".currenttime").style.fontSize = "3.4em";
   document.querySelector(".time-content").textContent = randomQoutesLN[Math.floor(Math.random()*3)];
-  document.querySelector(".time-meal").style.backgroundImage = "linear-gradient(to bottom right, rgba(128, 255, 32, 0.8), rgba(229, 250, 212, 0.8))";
+  document.querySelector(".time-meal").style.backgroundImage = "linear-gradient(to bottom right, rgba(153, 153, 245, 0.61), rgba(255, 255, 0, 0.59))";
   document.querySelector(".chef").style.width = "80%";
 }
 else {
