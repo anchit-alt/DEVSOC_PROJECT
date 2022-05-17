@@ -43,7 +43,6 @@ document.querySelector("footer").textContent = "Copyright @ "+currentYear;
 
 
 // DOM_RUCHIK
-alert("this works");
 var noOfItems = 24;
 var itemName = ["mi1","mi2","mi3","mi4","mi5","mi6","mi7","mi8","mi9","mi10","mi11","mi12","mi13","mi14","mi15","mi16","mi17","mi18","mi19","mi20","mi21","mi22","mi23","mi24"];
 var itemPrice = [100,200,300,400,500,600,700,800,900,1000,1100,1200,1300,1400,1500,1600,1700,1800,1900,2000,2100,2200,2300,2400];
