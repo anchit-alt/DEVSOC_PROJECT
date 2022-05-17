@@ -11,12 +11,25 @@ hmtl {
   font-family: 'Satisfy', cursive;
   /* color:white ; */
   margin-top: 8%;
-
   background: -webkit-linear-gradient(135deg, white, black);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}
+  animation-name: moveInLeft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-out;
 
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform:translateX(-20%);
+  }
+  80%{
+    transform:translateX(2%);
+  }
+
+
+}
 .container-1 {
   /* border: 2px solid blue; */
   text-align: center;
@@ -32,6 +45,11 @@ hmtl {
   justify-content: center;
   align-items: center;
 }
+.time-data {
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+}
 .time-img{
   text-align: center;
   /* border: 5px solid green; */
@@ -41,10 +59,19 @@ hmtl {
   border-radius: 5%;
 }
 .time-content {
-  font-size: 1.5em;
+  font-size: 3em;
   font-weight: 700;
   color: white;
   margin-left: 5%;
+  font-family: 'Zen Loop', cursive;
+  letter-spacing: 2px;
+}
+.currenttime {
+  margin-bottom: 8%;
+  font-family: 'Zen Loop', cursive;
+  letter-spacing: 0.7em;
+  color: white;
+  font-size: 700;
 }
 .menu {
   display: flex;
@@ -101,12 +128,18 @@ hmtl {
   background-size: cover;
 }
 
+.video-container{
+  opacity: 0.5;
+  width: 100%
+}
+
 
 /* DINNER STYLE */
 .dn-heading-main{
   font-weight: 900;
   letter-spacing: 1.5em;
   margin-top: 2%;
+  z-index: 2;
 
 }
 .dn-whole-page {
@@ -114,6 +147,7 @@ hmtl {
   flex-direction: column;
   /* background-image: linear-gradient(to bottom right , rgba(10, 21, 55, 0.89),rgba(130, 144, 236, 0.89)); */
   background-image: linear-gradient(to bottom right, #082567,#E0FFFF);
+  overflow: hidden;
 }
 .title{
   padding-top:2.5%;
@@ -123,10 +157,12 @@ hmtl {
   letter-spacing: 1.4em;
   font-size: 1.8em;
   font-weight: 900;
+  z-index: 2;
 }
 .dn-menu{
   display: flex;
   margin: 4%;
+  z-index: 2;
 }
 .dn-col {
   display: flex;
