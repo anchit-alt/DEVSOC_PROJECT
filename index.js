@@ -7,6 +7,7 @@ const randomQoutesBF = ["Whole wheat flour and oats make applesauce bread a heal
 
 const randomQoutesLN = ["Adelle Davis People who say they’re too busy to have lunch have a false impression of their own importance.~ John Howard","Food is, of course, a great way to meet people and make friends. When people share a meal, you can be sure the discussions about food, restaurants and recipes are going to be endless.","Food is an important topic of conversation to master. With a healthy food vocabulary, you’ll not only have valuable conversations with native English speakers, but you’ll also explore their culture through cuisine."]
 
+const randomQoutesDN = ["It will be a table with full glasses of wine, plates overflowing with food, and sparkling candles. The only thing that’s missing is you","Impress your sweetheart with beef Wellington, a classic British dish. Though it has a reputation as being a difficult recipe, it's actually quite simple. Essentially, it's nothing more than a seasoned beef fillet wrapped in puff pastry and baked until golden brown and scrumptious","Smoked paprika can really liven up a pair of fish filets to create a fantastic main dish. The sweet and smoky mahi-mahi recipe is quick and ready in just 20 minutes, making it ideal for a surprise dinner","Homemade crab cakes are delicious and a perfect side that can complement any entrée. They're a joy to make as well. All you need is crab meat, bread crumbs, and a few items from the pantry"]
 // Dynamic time code
 if (time>=5&&time<12){
   document.querySelector(".currenttime").textContent = "It's " + time
@@ -26,7 +27,7 @@ else {
   // time = time -12 ;
   document.querySelector(".currenttime").textContent = "It's " + time
   document.querySelector(".currenttime").style.fontSize = "3.4em";
-  document.querySelector(".time-content").textContent = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,";
+  document.querySelector(".time-content").textContent = randomQoutesDN[Math.floor(Math.random()*4)];
   document.querySelector(".time-meal").style.backgroundColor = "#051367";
   document.querySelector(".time-meal").style.backgroundImage = "linear-gradient(to bottom right, #686884,#121216 )";
 }

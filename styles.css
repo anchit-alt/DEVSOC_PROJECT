@@ -142,6 +142,7 @@ hmtl {
   display: flex;
   flex-direction: column;
   /* background-image: linear-gradient(to bottom right , rgba(10, 21, 55, 0.89),rgba(130, 144, 236, 0.89)); */
+  /* background-image: url("images/back1.jpeg"); */
   background-image: linear-gradient(to bottom right, #082567,#E0FFFF);
   overflow: hidden;
 }
