@@ -5,6 +5,7 @@ hmtl {
   scroll-behavior: smooth;
 }
 * {
+  margin: 0;
   box-sizing: border-box;
 }
 .main-heading {
@@ -28,7 +29,7 @@ hmtl {
     transform:translateX(-20%);
   }
   80%{
-    transform:translateX(2%);
+    transform:translateX(2.5%);
   }
 
 
@@ -157,47 +158,55 @@ hmtl {
   z-index: 2;
 }
 .dn-menu{
+  border: solid 2px blue;
   display: flex;
-  margin: 4%;
+  margin: 2%;
   z-index: 2;
 }
 .dn-col {
   display: flex;
   flex-direction:column;
-  /* border: solid 2px black; */
+  border: solid 2px black;
   width: 50%;
   text-align: center;
+  justify-content: center;
 }
 .dn-col1 {
-  /* border: solid 2px red; */
+  border: solid 2px red;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-bottom: 10%;
+  margin-bottom: 12%;
 }
 .dish1-img {
   width: 100%;
-  border: solid white 0.7em;
-  border-radius: 10%;
+  border: solid grey 0.4em;
+  border-radius: 7%;
 
 }
 .a:hover {
   transition: 0.7s;
   transition-timing-function: ease-out;
   transform: translate3d(15px,4px,100px);
-  box-shadow: 0px 0px 10px rgba(0,0,0,0.8);
-
+  box-shadow: 0px 0px 10px rgba(0,0,0,1);
 }
 .child {
   width:50%;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  height: 100%;
 }
 .grand-child{
   align-items:center;
   margin: auto;
   width: 100%;
+}
+.DISH_HEAD {
+  margin: 3%;
+  font-size: 1.3em;
+  font-family: sans-serif;
 }
 /* DINNER STYLE CLOSE */
 
