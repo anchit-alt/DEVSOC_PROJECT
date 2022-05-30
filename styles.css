@@ -158,7 +158,7 @@ hmtl {
   z-index: 2;
 }
 .dn-menu{
-  border: solid 2px blue;
+  /* border: solid 2px blue; */
   display: flex;
   margin: 2%;
   z-index: 2;
@@ -166,13 +166,13 @@ hmtl {
 .dn-col {
   display: flex;
   flex-direction:column;
-  border: solid 2px black;
+  /* border: solid 2px black; */
   width: 50%;
   text-align: center;
   justify-content: center;
 }
 .dn-col1 {
-  border: solid 2px red;
+  /* border: solid 2px red; */
   display: flex;
   justify-content: center;
   align-items: center;
